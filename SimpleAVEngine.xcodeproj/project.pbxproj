@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4C54CD21B5E8FC600255554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD11B5E8FC600255554 /* main.m */; };
+		E4C54CD51B5E8FC600255554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD41B5E8FC600255554 /* AppDelegate.m */; };
+		E4C54CD81B5E8FC600255554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD71B5E8FC600255554 /* ViewController.m */; };
+		E4C54CDB1B5E8FC600255554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C54CD91B5E8FC600255554 /* Main.storyboard */; };
+		E4C54CDD1B5E8FC600255554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C54CDC1B5E8FC600255554 /* Images.xcassets */; };
+		E4C54CE01B5E8FC600255554 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C54CDE1B5E8FC600255554 /* LaunchScreen.xib */; };
+		E4C54CEC1B5E8FC600255554 /* SimpleAVEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CEB1B5E8FC600255554 /* SimpleAVEngineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4C54CE61B5E8FC600255554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4C54CC41B5E8FC600255554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4C54CCB1B5E8FC600255554;
+			remoteInfo = SimpleAVEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4C54CCC1B5E8FC600255554 /* SimpleAVEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAVEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C54CD01B5E8FC600255554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C54CD11B5E8FC600255554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4C54CD31B5E8FC600255554 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4C54CD41B5E8FC600255554 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4C54CD61B5E8FC600255554 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4C54CD71B5E8FC600255554 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4C54CDA1B5E8FC600255554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4C54CDC1B5E8FC600255554 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4C54CDF1B5E8FC600255554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E4C54CE51B5E8FC600255554 /* SimpleAVEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAVEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C54CEA1B5E8FC600255554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C54CEB1B5E8FC600255554 /* SimpleAVEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAVEngineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4C54CC91B5E8FC600255554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C54CE21B5E8FC600255554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4C54CC31B5E8FC600255554 = {
+			isa = PBXGroup;
+			children = (
+				E4C54CCE1B5E8FC600255554 /* SimpleAVEngine */,
+				E4C54CE81B5E8FC600255554 /* SimpleAVEngineTests */,
+				E4C54CCD1B5E8FC600255554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4C54CCD1B5E8FC600255554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CCC1B5E8FC600255554 /* SimpleAVEngine.app */,
+				E4C54CE51B5E8FC600255554 /* SimpleAVEngineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4C54CCE1B5E8FC600255554 /* SimpleAVEngine */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CD31B5E8FC600255554 /* AppDelegate.h */,
+				E4C54CD41B5E8FC600255554 /* AppDelegate.m */,
+				E4C54CD61B5E8FC600255554 /* ViewController.h */,
+				E4C54CD71B5E8FC600255554 /* ViewController.m */,
+				E4C54CD91B5E8FC600255554 /* Main.storyboard */,
+				E4C54CDC1B5E8FC600255554 /* Images.xcassets */,
+				E4C54CDE1B5E8FC600255554 /* LaunchScreen.xib */,
+				E4C54CCF1B5E8FC600255554 /* Supporting Files */,
+			);
+			path = SimpleAVEngine;
+			sourceTree = "<group>";
+		};
+		E4C54CCF1B5E8FC600255554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CD01B5E8FC600255554 /* Info.plist */,
+				E4C54CD11B5E8FC600255554 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4C54CE81B5E8FC600255554 /* SimpleAVEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CEB1B5E8FC600255554 /* SimpleAVEngineTests.m */,
+				E4C54CE91B5E8FC600255554 /* Supporting Files */,
+			);
+			path = SimpleAVEngineTests;
+			sourceTree = "<group>";
+		};
+		E4C54CE91B5E8FC600255554 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CEA1B5E8FC600255554 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4C54CCB1B5E8FC600255554 /* SimpleAVEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C54CEF1B5E8FC600255554 /* Build configuration list for PBXNativeTarget "SimpleAVEngine" */;
+			buildPhases = (
+				E4C54CC81B5E8FC600255554 /* Sources */,
+				E4C54CC91B5E8FC600255554 /* Frameworks */,
+				E4C54CCA1B5E8FC600255554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleAVEngine;
+			productName = SimpleAVEngine;
+			productReference = E4C54CCC1B5E8FC600255554 /* SimpleAVEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4C54CE41B5E8FC600255554 /* SimpleAVEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4C54CF21B5E8FC600255554 /* Build configuration list for PBXNativeTarget "SimpleAVEngineTests" */;
+			buildPhases = (
+				E4C54CE11B5E8FC600255554 /* Sources */,
+				E4C54CE21B5E8FC600255554 /* Frameworks */,
+				E4C54CE31B5E8FC600255554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4C54CE71B5E8FC600255554 /* PBXTargetDependency */,
+			);
+			name = SimpleAVEngineTests;
+			productName = SimpleAVEngineTests;
+			productReference = E4C54CE51B5E8FC600255554 /* SimpleAVEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4C54CC41B5E8FC600255554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Thierry Sansaricq";
+				TargetAttributes = {
+					E4C54CCB1B5E8FC600255554 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E4C54CE41B5E8FC600255554 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E4C54CCB1B5E8FC600255554;
+					};
+				};
+			};
+			buildConfigurationList = E4C54CC71B5E8FC600255554 /* Build configuration list for PBXProject "SimpleAVEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4C54CC31B5E8FC600255554;
+			productRefGroup = E4C54CCD1B5E8FC600255554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4C54CCB1B5E8FC600255554 /* SimpleAVEngine */,
+				E4C54CE41B5E8FC600255554 /* SimpleAVEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4C54CCA1B5E8FC600255554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C54CDB1B5E8FC600255554 /* Main.storyboard in Resources */,
+				E4C54CE01B5E8FC600255554 /* LaunchScreen.xib in Resources */,
+				E4C54CDD1B5E8FC600255554 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C54CE31B5E8FC600255554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4C54CC81B5E8FC600255554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C54CD81B5E8FC600255554 /* ViewController.m in Sources */,
+				E4C54CD51B5E8FC600255554 /* AppDelegate.m in Sources */,
+				E4C54CD21B5E8FC600255554 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C54CE11B5E8FC600255554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C54CEC1B5E8FC600255554 /* SimpleAVEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4C54CE71B5E8FC600255554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4C54CCB1B5E8FC600255554 /* SimpleAVEngine */;
+			targetProxy = E4C54CE61B5E8FC600255554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4C54CD91B5E8FC600255554 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4C54CDA1B5E8FC600255554 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4C54CDE1B5E8FC600255554 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4C54CDF1B5E8FC600255554 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4C54CED1B5E8FC600255554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4C54CEE1B5E8FC600255554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4C54CF01B5E8FC600255554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleAVEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4C54CF11B5E8FC600255554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimpleAVEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4C54CF31B5E8FC600255554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleAVEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleAVEngine.app/SimpleAVEngine";
+			};
+			name = Debug;
+		};
+		E4C54CF41B5E8FC600255554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimpleAVEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleAVEngine.app/SimpleAVEngine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4C54CC71B5E8FC600255554 /* Build configuration list for PBXProject "SimpleAVEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C54CED1B5E8FC600255554 /* Debug */,
+				E4C54CEE1B5E8FC600255554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4C54CEF1B5E8FC600255554 /* Build configuration list for PBXNativeTarget "SimpleAVEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C54CF01B5E8FC600255554 /* Debug */,
+				E4C54CF11B5E8FC600255554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4C54CF21B5E8FC600255554 /* Build configuration list for PBXNativeTarget "SimpleAVEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4C54CF31B5E8FC600255554 /* Debug */,
+				E4C54CF41B5E8FC600255554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4C54CC41B5E8FC600255554 /* Project object */;
+}
