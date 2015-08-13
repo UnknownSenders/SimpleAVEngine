@@ -22,6 +22,7 @@
     AVAudioUnitSampler  *_midiInstrument;
     AVAudioUnitSampler  *_midiInstrument2;
     AVMIDIPlayer        *_midiPlayer;
+    MusicSequence       _musicSequence;
     
     //AVAudioPCMBuffer    *_drumLoopBuffer;
     
@@ -197,7 +198,13 @@
     [_engine attachNode:_marimbaPlayer];
     [_engine attachNode:_midiInstrument];
     [_engine attachNode:_midiInstrument2];
+    [_engine setMusicSequence:_musicSequence];
     
+    
+    /*
+      attache  musicSequence to AVAudioEngine
+     */
+     
     
     //[_engine attachNode:_drumPlayer];
     //[_engine attachNode:_delay];
@@ -297,6 +304,8 @@
     [_engine connect:_midiInstrument2 to:mainMixer format:[_midiInstrument2 outputFormatForBus:0]];
     _numInstruments++;
     
+    //[_engine setMusicSequence:_musicSequence];
+    
     // marimba player -> delay -> main mixer
     //[_engine connect: _marimbaPlayer to:_delay format:_marimbaLoopBuffer.format];
     //[_engine connect:_delay to:mainMixer format:_marimbaLoopBuffer.format];
@@ -393,6 +402,15 @@
     //}
     
     
+    
+}
+
+
+- (void)createMusicSequence{
+    NewMusicSequence(&_musicSequence);
+
+    NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
+    MusicSequenceFileLoad(_musicSequence, CFBridgingRetain(midiFileURL), 0, 0);
     
 }
 
