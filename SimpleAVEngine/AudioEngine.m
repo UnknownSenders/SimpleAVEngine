@@ -67,11 +67,9 @@
        
        
         NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"shakyC2" ofType:@"aupreset"]];
-        
         //NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"defaultInstrument" ofType:@"aupreset"]];
         [_midiInstrument loadInstrumentAtURL:sampleURL error:&error];
         
-        //[_midiInstrument2 l]
         
         [self addInstrument];
         
@@ -93,9 +91,13 @@
         NSURL *sbURL = [[NSBundle mainBundle] URLForResource:@"Yamaha_XG_Sound_Set" withExtension:@"sf2"];
         NSData *midiData = [NSData dataWithContentsOfFile:[midiFileURL path]];
 
+       
         NSAssert(_midiPlayer = [[AVMIDIPlayer alloc] initWithData:midiData soundBankURL:sbURL error:&error],@"couldn't initialize midiPlayer", "%@",[error localizedDescription]);
         if(_midiPlayer)
             [_midiPlayer prepareToPlay];
+       
+        
+       
         
         // sign up for notifications from the engine if there's a hardware config change
         [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioEngineConfigurationChangeNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
@@ -350,12 +352,35 @@
     NSError *error;
     
     
-    if(!_midiInstrument2){
+    //if(!_midiInstrument2){
         
+        /*
         NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"defaultInstrument3" ofType:@"aupreset"]];
 
         [_midiInstrument2 loadInstrumentAtURL:sampleURL error:&error];
-   
+   */
+        
+        //NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
+        //NSURL *sbURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"organ'" ofType:@"sf2"]];
+        NSURL *sbURL = [[NSBundle mainBundle] URLForResource:@"Yamaha_XG_Sound_Set" withExtension:@"sf2"];
+        //NSData *midiData = [NSData dataWithContentsOfFile:[midiFileURL path]];
+        
+        /*
+         @param bankURL
+         URL for a Soundbank file. The file can be either a DLS bank (.dls) or a SoundFont bank (.sf2).
+         @param program
+         program number for the instrument to load
+         @param bankMSB
+         MSB for the bank number for the instrument to load.  This is usually 0x79 for melodic
+         instruments and 0x78 for percussion instruments.
+         @param bankLSB
+         LSB for the bank number for the instrument to load.  This is often 0, and represents the "bank variation".
+         @param outError
+         the status of the operation
+         */
+        [_midiInstrument2 loadSoundBankInstrumentAtURL:sbURL program:0 bankMSB:0x79 bankLSB:0 error:&error];
+        
+
     
     
         /*
@@ -365,7 +390,7 @@
     
         [_engine connect:_midiInstrument2 to:mainMixer format:[_midiInstrument2 outputFormatForBus:0]];
         */
-    }
+    //}
     
     
     
