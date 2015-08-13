@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4226E211B759CB100EA62B5 /* organ.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E4226E201B759CB100EA62B5 /* organ.sf2 */; };
+		E4226E221B759CB100EA62B5 /* organ.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E4226E201B759CB100EA62B5 /* organ.sf2 */; };
+		E4226E241B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E4226E231B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 */; };
+		E4226E251B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = E4226E231B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 */; };
+		E48A14F01B6A612600A85254 /* shakyC2.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = E48A14EF1B6A612600A85254 /* shakyC2.aupreset */; };
+		E48A14F81B6A634100A85254 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = E48A14F71B6A634100A85254 /* Sounds */; };
+		E48A14F91B6A634100A85254 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = E48A14F71B6A634100A85254 /* Sounds */; };
 		E4C54CD21B5E8FC600255554 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD11B5E8FC600255554 /* main.m */; };
 		E4C54CD51B5E8FC600255554 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD41B5E8FC600255554 /* AppDelegate.m */; };
 		E4C54CD81B5E8FC600255554 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CD71B5E8FC600255554 /* ViewController.m */; };
@@ -14,6 +21,16 @@
 		E4C54CDD1B5E8FC600255554 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C54CDC1B5E8FC600255554 /* Images.xcassets */; };
 		E4C54CE01B5E8FC600255554 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C54CDE1B5E8FC600255554 /* LaunchScreen.xib */; };
 		E4C54CEC1B5E8FC600255554 /* SimpleAVEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C54CEB1B5E8FC600255554 /* SimpleAVEngineTests.m */; };
+		E4C54CFD1B5E92E500255554 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C54CFC1B5E92E500255554 /* AVFoundation.framework */; };
+		E4CEABD51B67C43700225DAB /* defaultInstrument.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = E4CEABD41B67C43700225DAB /* defaultInstrument.aupreset */; };
+		E4CEABD61B67C43700225DAB /* defaultInstrument.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = E4CEABD41B67C43700225DAB /* defaultInstrument.aupreset */; };
+		E4D5FECA1B7034C100DB1CEF /* defaultInstrument2.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = E4D5FEC91B7034C100DB1CEF /* defaultInstrument2.aupreset */; };
+		E4D5FECC1B70352400DB1CEF /* defaultInstrument3.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = E4D5FECB1B70352400DB1CEF /* defaultInstrument3.aupreset */; };
+		E4D88CEE1B631CC4003B0B46 /* marimbaLoop.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4D88CED1B631CC4003B0B46 /* marimbaLoop.caf */; };
+		E4D88CEF1B631CC4003B0B46 /* marimbaLoop.caf in Resources */ = {isa = PBXBuildFile; fileRef = E4D88CED1B631CC4003B0B46 /* marimbaLoop.caf */; };
+		E4D88CF21B631CD4003B0B46 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D88CF11B631CD4003B0B46 /* AudioEngine.m */; };
+		E4D88CF31B631CD4003B0B46 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D88CF11B631CD4003B0B46 /* AudioEngine.m */; };
+		E4D998001B739EEC0058596A /* Bee_Gees_-_Jive_Talkin'.mid in Resources */ = {isa = PBXBuildFile; fileRef = E4D997FF1B739EEC0058596A /* Bee_Gees_-_Jive_Talkin'.mid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4226E201B759CB100EA62B5 /* organ.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = organ.sf2; path = sound/organ.sf2; sourceTree = "<group>"; };
+		E4226E231B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Yamaha_XG_Sound_Set.sf2; path = sound/Yamaha_XG_Sound_Set.sf2; sourceTree = "<group>"; };
+		E48A14EF1B6A612600A85254 /* shakyC2.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = shakyC2.aupreset; path = sound/shakyC2.aupreset; sourceTree = "<group>"; };
+		E48A14F71B6A634100A85254 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		E4C54CCC1B5E8FC600255554 /* SimpleAVEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAVEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C54CD01B5E8FC600255554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C54CD11B5E8FC600255554 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +61,14 @@
 		E4C54CE51B5E8FC600255554 /* SimpleAVEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAVEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C54CEA1B5E8FC600255554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C54CEB1B5E8FC600255554 /* SimpleAVEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAVEngineTests.m; sourceTree = "<group>"; };
+		E4C54CFC1B5E92E500255554 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E4CEABD41B67C43700225DAB /* defaultInstrument.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultInstrument.aupreset; path = sound/defaultInstrument.aupreset; sourceTree = "<group>"; };
+		E4D5FEC91B7034C100DB1CEF /* defaultInstrument2.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultInstrument2.aupreset; path = sound/defaultInstrument2.aupreset; sourceTree = "<group>"; };
+		E4D5FECB1B70352400DB1CEF /* defaultInstrument3.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = defaultInstrument3.aupreset; path = sound/defaultInstrument3.aupreset; sourceTree = "<group>"; };
+		E4D88CED1B631CC4003B0B46 /* marimbaLoop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = marimbaLoop.caf; sourceTree = "<group>"; };
+		E4D88CF01B631CD4003B0B46 /* AudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
+		E4D88CF11B631CD4003B0B46 /* AudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioEngine.m; sourceTree = "<group>"; };
+		E4D997FF1B739EEC0058596A /* Bee_Gees_-_Jive_Talkin'.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = "Bee_Gees_-_Jive_Talkin'.mid"; path = "sound/Bee_Gees_-_Jive_Talkin'.mid"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C54CFD1B5E92E500255554 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E4C54CCE1B5E8FC600255554 /* SimpleAVEngine */,
+				E4C54CFE1B5E935600255554 /* Frameworks */,
 				E4C54CE81B5E8FC600255554 /* SimpleAVEngineTests */,
 				E4C54CCD1B5E8FC600255554 /* Products */,
 			);
@@ -81,6 +112,8 @@
 		E4C54CCE1B5E8FC600255554 /* SimpleAVEngine */ = {
 			isa = PBXGroup;
 			children = (
+				E4D88CF01B631CD4003B0B46 /* AudioEngine.h */,
+				E4D88CF11B631CD4003B0B46 /* AudioEngine.m */,
 				E4C54CD31B5E8FC600255554 /* AppDelegate.h */,
 				E4C54CD41B5E8FC600255554 /* AppDelegate.m */,
 				E4C54CD61B5E8FC600255554 /* ViewController.h */,
@@ -96,6 +129,15 @@
 		E4C54CCF1B5E8FC600255554 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4226E231B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 */,
+				E4226E201B759CB100EA62B5 /* organ.sf2 */,
+				E4D997FF1B739EEC0058596A /* Bee_Gees_-_Jive_Talkin'.mid */,
+				E4D5FECB1B70352400DB1CEF /* defaultInstrument3.aupreset */,
+				E4D5FEC91B7034C100DB1CEF /* defaultInstrument2.aupreset */,
+				E48A14EF1B6A612600A85254 /* shakyC2.aupreset */,
+				E48A14F71B6A634100A85254 /* Sounds */,
+				E4CEABD41B67C43700225DAB /* defaultInstrument.aupreset */,
+				E4D88CED1B631CC4003B0B46 /* marimbaLoop.caf */,
 				E4C54CD01B5E8FC600255554 /* Info.plist */,
 				E4C54CD11B5E8FC600255554 /* main.m */,
 			);
@@ -117,6 +159,15 @@
 				E4C54CEA1B5E8FC600255554 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4C54CFE1B5E935600255554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4C54CFC1B5E92E500255554 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			path = SimpleAVEngine.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +219,7 @@
 				TargetAttributes = {
 					E4C54CCB1B5E8FC600255554 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = JNR6JL3MR6;
 					};
 					E4C54CE41B5E8FC600255554 = {
 						CreatedOnToolsVersion = 6.4;
@@ -199,8 +251,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CEABD51B67C43700225DAB /* defaultInstrument.aupreset in Resources */,
+				E48A14F81B6A634100A85254 /* Sounds in Resources */,
+				E4226E241B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 in Resources */,
+				E4D998001B739EEC0058596A /* Bee_Gees_-_Jive_Talkin'.mid in Resources */,
+				E4D5FECA1B7034C100DB1CEF /* defaultInstrument2.aupreset in Resources */,
 				E4C54CDB1B5E8FC600255554 /* Main.storyboard in Resources */,
+				E4D5FECC1B70352400DB1CEF /* defaultInstrument3.aupreset in Resources */,
+				E4226E211B759CB100EA62B5 /* organ.sf2 in Resources */,
+				E48A14F01B6A612600A85254 /* shakyC2.aupreset in Resources */,
 				E4C54CE01B5E8FC600255554 /* LaunchScreen.xib in Resources */,
+				E4D88CEE1B631CC4003B0B46 /* marimbaLoop.caf in Resources */,
 				E4C54CDD1B5E8FC600255554 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +270,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D88CEF1B631CC4003B0B46 /* marimbaLoop.caf in Resources */,
+				E4226E251B75B88300EA62B5 /* Yamaha_XG_Sound_Set.sf2 in Resources */,
+				E4226E221B759CB100EA62B5 /* organ.sf2 in Resources */,
+				E4CEABD61B67C43700225DAB /* defaultInstrument.aupreset in Resources */,
+				E48A14F91B6A634100A85254 /* Sounds in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D88CF21B631CD4003B0B46 /* AudioEngine.m in Sources */,
 				E4C54CD81B5E8FC600255554 /* ViewController.m in Sources */,
 				E4C54CD51B5E8FC600255554 /* AppDelegate.m in Sources */,
 				E4C54CD21B5E8FC600255554 /* main.m in Sources */,
@@ -229,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D88CF31B631CD4003B0B46 /* AudioEngine.m in Sources */,
 				E4C54CEC1B5E8FC600255554 /* SimpleAVEngineTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +417,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleAVEngine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +430,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SimpleAVEngine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +492,7 @@
 				E4C54CF11B5E8FC600255554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4C54CF21B5E8FC600255554 /* Build configuration list for PBXNativeTarget "SimpleAVEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +501,7 @@
 				E4C54CF41B5E8FC600255554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

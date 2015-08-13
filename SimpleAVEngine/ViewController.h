@@ -7,9 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+@class AudioEngine;
 
-@interface ViewController : UIViewController
 
+@interface ViewController : UIViewController{
+    AudioEngine *engine;
+}
+
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *marimbaPlayButton;
+
+@property (nonatomic, strong) IBOutlet UIButton *drumButton;
+
+- (IBAction) startPlayMidNote:(id)sender;
+- (IBAction) addInstrument:(id)sender;
+- (IBAction) playMidi2:(id)sender;
+- (IBAction) stopMidi2:(id)sender;
+- (IBAction) playMidiFile:(id)sender;
+- (IBAction) stopMidiFile:(id)sender;
+- (IBAction) resetMidiFile:(id)sender;
+
+
+- (IBAction)togglePlayMarimba:(id)sender;
 
 @end
 
