@@ -62,6 +62,8 @@
         _midiInstrument = [[AVAudioUnitSampler alloc] init];
         _midiInstrument2 = [[AVAudioUnitSampler alloc] init];
         
+        [self createMusicSequence];
+        
         
         // create an instance of the engine and attach the nodes
         [self createEngineAndAttachNodes];
@@ -198,7 +200,7 @@
     [_engine attachNode:_marimbaPlayer];
     [_engine attachNode:_midiInstrument];
     [_engine attachNode:_midiInstrument2];
-    [_engine setMusicSequence:_musicSequence];
+    //[_engine setMusicSequence:_musicSequence];
     
     
     /*
@@ -410,7 +412,23 @@
     NewMusicSequence(&_musicSequence);
 
     NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
-    MusicSequenceFileLoad(_musicSequence, CFBridgingRetain(midiFileURL), 0, 0);
+    
+    MusicSequenceFileLoad(_musicSequence, (__bridge CFURLRef)(midiFileURL), 0, 0);
+    
+    // Create a new music player
+    MusicPlayer  p;
+    // Initialise the music player
+    NewMusicPlayer(&p);
+    
+    // Load the sequence into the music player
+    MusicPlayerSetSequence(p, _musicSequence);
+    // Called to do some MusicPlayer setup. This just
+    // reduces latency when MusicPlayerStart is called
+    MusicPlayerPreroll(p);
+    // Starts the music playing
+    MusicPlayerStart(p);
+    
+ 
     
 }
 
