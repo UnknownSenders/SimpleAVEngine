@@ -36,7 +36,12 @@
 - (void)playMidiNote;
 - (void)playMidiNote2;
 - (void)stopMidiNote2;
-- (void)addInstrument;
+- (void)playSequence;
+- (void)stopSequence;
+
+
+- (void)addInstrument1;
+- (void)addInstrument2;
 - (void)removeInstrument;
 - (void)playMidiFile;
 - (void)stopMidiFile;

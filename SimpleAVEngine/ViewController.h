@@ -25,6 +25,8 @@
 - (IBAction) playMidiFile:(id)sender;
 - (IBAction) stopMidiFile:(id)sender;
 - (IBAction) resetMidiFile:(id)sender;
+- (IBAction) playSequence:(id)sender;
+- (IBAction) stopSequence:(id)sender;
 
 
 - (IBAction)togglePlayMarimba:(id)sender;

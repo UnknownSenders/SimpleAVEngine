@@ -69,6 +69,14 @@
     [engine resetMidiFilePosition];
 }
 
+- (IBAction)playSequence:(id)sender{
+    [engine playSequence];
+}
+
+- (IBAction)stopSequence:(id)sender{
+    [engine stopSequence];
+}
+
 #pragma mark protocol methos
 
 - (void)engineConfigurationHasChanged

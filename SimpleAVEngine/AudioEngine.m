@@ -22,7 +22,9 @@
     AVAudioUnitSampler  *_midiInstrument;
     AVAudioUnitSampler  *_midiInstrument2;
     AVMIDIPlayer        *_midiPlayer;
+    
     MusicSequence       _musicSequence;
+    MusicPlayer         _musicPlayer;
     
     //AVAudioPCMBuffer    *_drumLoopBuffer;
     
@@ -54,51 +56,27 @@
     if (self = [super init]) {
         
         
-        NSError *error;
-        
         _numInstruments = 0;
         
         _marimbaPlayer = [[AVAudioPlayerNode alloc] init];
         _midiInstrument = [[AVAudioUnitSampler alloc] init];
         _midiInstrument2 = [[AVAudioUnitSampler alloc] init];
         
-        [self createMusicSequence];
+        
         
         
         // create an instance of the engine and attach the nodes
         [self createEngineAndAttachNodes];
        
-       
-        NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"shakyC2" ofType:@"aupreset"]];
-        //NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"defaultInstrument" ofType:@"aupreset"]];
-        [_midiInstrument loadInstrumentAtURL:sampleURL error:&error];
-        
-        
-        [self addInstrument];
-        
-        
-        // load marimba loop
-        NSURL *marimbaLoopURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"marimbaLoop" ofType:@"caf"]];
-        AVAudioFile *marimbaLoopFile = [[AVAudioFile alloc] initForReading:marimbaLoopURL error:&error];
-        _marimbaLoopBuffer = [[AVAudioPCMBuffer alloc] initWithPCMFormat:[marimbaLoopFile processingFormat] frameCapacity:(AVAudioFrameCount)[marimbaLoopFile length]];
-        NSAssert([marimbaLoopFile readIntoBuffer:_marimbaLoopBuffer error:&error], @"couldn't read marimbaLoopFile into buffer, %@", [error localizedDescription]);
-        
-        
-        
-        //Read in a .mid file
-        //NSURL *midiContentURL;
-        
-       
-        NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
-        //NSURL *sbURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"organ'" ofType:@"sf2"]];
-        NSURL *sbURL = [[NSBundle mainBundle] URLForResource:@"Yamaha_XG_Sound_Set" withExtension:@"sf2"];
-        NSData *midiData = [NSData dataWithContentsOfFile:[midiFileURL path]];
+      
+        [self loadPlayerLoop];
+        [self addInstrument1];
+        [self addInstrument2];
+        [self createMidiPlayer];
+        [self createMusicSequence];
 
-       
-        NSAssert(_midiPlayer = [[AVMIDIPlayer alloc] initWithData:midiData soundBankURL:sbURL error:&error],@"couldn't initialize midiPlayer", "%@",[error localizedDescription]);
-        if(_midiPlayer)
-            [_midiPlayer prepareToPlay];
-       
+        
+
         
        
         
@@ -128,7 +106,10 @@
         // make engine connections
         [self makeEngineConnections];
        
+        //[_engine setMusicSequence:_musicSequence];
         [self startEngine];
+        
+        //[_engine setMusicSequence:_musicSequence];
         
               //[_marimbaPlayer scheduleBuffer:_marimbaLoopBuffer atTime:nil options:AVAudioPlayerNodeBufferLoops completionHandler:nil];
         //[_marimbaPlayer play];
@@ -353,8 +334,29 @@
     [_midiInstrument2 stopNote:60 onChannel:1];
 }
 
+-(void)loadPlayerLoop{
+     NSError *error;
+    
+    // load marimba loop
+    NSURL *marimbaLoopURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"marimbaLoop" ofType:@"caf"]];
+    AVAudioFile *marimbaLoopFile = [[AVAudioFile alloc] initForReading:marimbaLoopURL error:&error];
+    _marimbaLoopBuffer = [[AVAudioPCMBuffer alloc] initWithPCMFormat:[marimbaLoopFile processingFormat] frameCapacity:(AVAudioFrameCount)[marimbaLoopFile length]];
+    NSAssert([marimbaLoopFile readIntoBuffer:_marimbaLoopBuffer error:&error], @"couldn't read marimbaLoopFile into buffer, %@", [error localizedDescription]);
+    
+    
 
-- (void)addInstrument{
+}
+
+-(void)addInstrument1{
+    NSError *error;
+
+    NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"shakyC2" ofType:@"aupreset"]];
+    //NSURL *sampleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"defaultInstrument" ofType:@"aupreset"]];
+    [_midiInstrument loadInstrumentAtURL:sampleURL error:&error];
+    
+
+}
+- (void)addInstrument2{
     
     if(_numInstruments >= 2){
         return;
@@ -408,12 +410,36 @@
 }
 
 
+- (void)createMidiPlayer{
+    NSError *error;
+
+    NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
+    //NSURL *sbURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"organ'" ofType:@"sf2"]];
+    NSURL *sbURL = [[NSBundle mainBundle] URLForResource:@"Yamaha_XG_Sound_Set" withExtension:@"sf2"];
+    NSData *midiData = [NSData dataWithContentsOfFile:[midiFileURL path]];
+    
+    
+    NSAssert(_midiPlayer = [[AVMIDIPlayer alloc] initWithData:midiData soundBankURL:sbURL error:&error],@"couldn't initialize midiPlayer", "%@",[error localizedDescription]);
+    if(_midiPlayer)
+        [_midiPlayer prepareToPlay];
+    
+    
+    
+}
+
 - (void)createMusicSequence{
-    NewMusicSequence(&_musicSequence);
+    
+    //from
+    //http://www.deluge.co/?q=midi-driven-animation-core-audio-objective-c
+    
+    NewMusicSequence(&(_musicSequence));
 
     NSURL *midiFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Bee_Gees_-_Jive_Talkin'" ofType:@"mid"]];
     
-    MusicSequenceFileLoad(_musicSequence, (__bridge CFURLRef)(midiFileURL), 0, 0);
+    OSStatus status = MusicSequenceFileLoad(_musicSequence, (__bridge CFURLRef)(midiFileURL), kMusicSequenceFile_MIDIType, kMusicSequenceLoadSMF_ChannelsToTracks);
+    
+
+    /*
     
     // Create a new music player
     MusicPlayer  p;
@@ -429,7 +455,33 @@
     MusicPlayerStart(p);
     
  
+     */
     
+}
+
+- (void)playSequence{
+
+    if(!_musicPlayer){
+        NewMusicPlayer(&(_musicPlayer));
+    }
+    
+    if(_musicSequence){
+        MusicPlayerSetSequence(_musicPlayer, _musicSequence);
+    }
+    
+    Boolean isPlaying;
+    MusicPlayerIsPlaying(_musicPlayer, &isPlaying);
+    if(!isPlaying){
+        MusicPlayerPreroll(_musicPlayer);
+        MusicPlayerStart(_musicPlayer);
+    }
+    
+}
+
+-(void)stopSequence{
+    if(_musicPlayer){
+        MusicPlayerStop(_musicPlayer);
+    }
 }
 
 - (void)removeInstrument{
